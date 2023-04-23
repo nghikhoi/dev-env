@@ -12,7 +12,7 @@ services:
       - zookeeper
 
   rabbitmq:
-    image: rabbitmq:3-management-alpine
+    image: heidiks/rabbitmq-delayed-message-exchange:latest
     container_name: 'rabbitmq'
     ports:
       - "15672:15672"
